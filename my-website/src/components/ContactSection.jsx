@@ -6,12 +6,12 @@ function ContactSection() {
         The best way to reach me is via email or LinkedIn.
       </p>
 
-      <div className="mt-4 flex flex-wrap gap-4 text-sm">
-        <a href="mailto:you@example.com" className="underline">
+      <div className="mt-4 flex flex-wrap gap-4 text-medium">
+        <a href="mailto:llbalch@gmail.com" className="underline">
           Email
         </a>
         <a
-          href="https://www.linkedin.com/in/your-profile"
+          href="https://www.linkedin.com/in/laurenpowell7/"
           target="_blank"
           rel="noreferrer"
           className="underline"
@@ -19,7 +19,7 @@ function ContactSection() {
           LinkedIn
         </a>
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/llbalch/"
           target="_blank"
           rel="noreferrer"
           className="underline"
