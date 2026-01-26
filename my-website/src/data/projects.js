@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     id: "smart-shopping-app",
-    title: "Smart Shopping App",
+    title: "SmartCart App",
     summary: "A smart shopping list that helps you manage your grocery list with ease.",
     tech: ["React", "JavaScript", "Bootstrap", "Vite", "CI/CD"],
     githubUrl: "https://github.com/llbalch/smart-shopping-app",
@@ -24,7 +24,7 @@ export const projects = [
     summary: "RESTful API and React UI for managing pet adoptions.",
     tech: ["React","JavaScript", "Tailwind", "Spring Security"],
     githubUrl: "https://github.com/llbalch/personalwebsite",
-    liveUrl: "https://yourapp.vercel.app",
+    liveUrl: "https://ephemeral-tartufo-a2abd8.netlify.app/",
     type: "project",
   },
   {
