@@ -35,7 +35,7 @@ function Hero() {
         <img
           src="/LPEmoji.png"
           alt="Profile"
-          className="h-40 w-40 object-cover md:h-64 md:w-64 lg:h-80 lg:w-80"
+          className="rounded-full h-40 w-40 object-cover md:h-64 md:w-64 lg:h-80 lg:w-80"
         />
       </div>
     </section>
