@@ -5,7 +5,7 @@ function ResumeSection() {
         <div className="flex flex-wrap items-center justify-between gap-4">
           <h2 className="text-2xl font-semibold">TL;DR</h2>
           <a
-            href="/resume.pdf"
+            href="LAUREN_POWELL_Resume.pdf"
             download
             className="rounded-full bg-orange-500 px-4 py-2 text-sm font-medium"
           >
