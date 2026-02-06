@@ -1,15 +1,25 @@
 import { Link } from "react-router-dom";
+import { useTheme } from '../context/ThemeContext';
 
 function ProjectCard({ project }) {
+    const { isDark } = useTheme();
+
   return (
-    <article className="flex flex-col gap-2 rounded-xl bg-slate-900 p-4 text-sm">
+    <article className={`flex flex-col gap-2 rounded-xl p-4 text-sm ${isDark ? 'bg-slate-950/80' : 'bg-violet-400/80'}`}>
       <Link to={`/projects/${project.id}`}>
         <h3 className="text-lg font-semibold">{project.title}</h3>
-        <p className="text-slate-300">{project.summary}</p>
+        <p className="text-slate-100">{project.summary}</p>
 
-        <div className="flex flex-wrap gap-2 text-xs text-violet-300">
+        <div className="flex flex-wrap gap-2 text-xs">
           {project.tech.map((t) => (
-            <span key={t} className="rounded-full bg-violet-500/10 px-2 py-1">
+            <span 
+              key={t} 
+              className={`rounded-full px-2 py-1 ${
+                isDark 
+                  ? 'bg-violet-500/10 text-violet-300' 
+                  : 'bg-white/60 text-violet-700'
+              }`}
+            >
               {t}
             </span>
           ))}

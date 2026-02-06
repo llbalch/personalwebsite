@@ -1,6 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { useTheme } from "../context/ThemeContext";
 
 function Hero() {
+  const { isDark } = useTheme();
+    const textColorClass = isDark ? "text-slate-300" : "text-slate-700";
+
   return (
     <section
       id="top"
@@ -13,20 +17,26 @@ function Hero() {
         <p className="text-2xl uppercase tracking-wide text-orange-400 md:text-3xl">
           Junior Software Engineer
         </p>
-        <p className="max-w-xl text-sm text-slate-300 md:text-base">
+        <p className={`max-w-xl text-sm md:text-base ${textColorClass}`}>
           THRIVE Software Engineer Apprentice @ Verizon
         </p>
 
-        <div className="flex flex-wrap gap-3">
+        <div
+          className={`flex flex-wrap gap-3`}
+        >
           <Link
             to="/#portfolio"
-            className="rounded-full bg-violet-500/20 px-4 py-2 text-sm font-medium"
+            className={`rounded-full px-4 py-2 text-sm font-medium ${
+            isDark ? "bg-violet-500/20" : "bg-violet-400/80"
+          }`}
           >
             View Portfolio
           </Link>
           <Link
             to="/#resume"
-            className="rounded-full bg-violet-500/20 px-4 py-2 text-sm font-medium"
+            className={`rounded-full px-4 py-2 text-sm font-medium ${
+            isDark ? "bg-violet-500/20" : "bg-violet-400/80"
+          }`}
           >
             View Resume
           </Link>
@@ -37,7 +47,7 @@ function Hero() {
         <img
           src="/LPEmoji.png"
           alt="Profile"
-          className="rounded-full h-40 w-40 object-cover md:h-64 md:w-64 lg:h-80 lg:w-80"
+          className={`rounded-full h-40 w-40 object-cover md:h-64 md:w-64 lg:h-80 lg:w-80`}
         />
       </div>
     </section>
