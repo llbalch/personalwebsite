@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Hero() {
   return (
     <section
@@ -16,18 +18,18 @@ function Hero() {
         </p>
 
         <div className="flex flex-wrap gap-3">
-          <a
-            href="#portfolio"
+          <Link
+            to="/#portfolio"
             className="rounded-full bg-violet-500/20 px-4 py-2 text-sm font-medium"
           >
             View Portfolio
-          </a>
-          <a
-            href="#resume"
+          </Link>
+          <Link
+            to="/#resume"
             className="rounded-full bg-violet-500/20 px-4 py-2 text-sm font-medium"
           >
             View Resume
-          </a>
+          </Link>
         </div>
       </div>
 

@@ -1,10 +1,8 @@
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import AboutSection from "./components/AboutSection";
-import ProjectsSection from "./components/ProjectsSection";
-import ResumeSection from "./components/ResumeSection";
-import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 
 function App() {
   return (
@@ -12,13 +10,11 @@ function App() {
       <Navbar />
 
       <main>
-        <Hero />
-        <AboutSection />
-        <ProjectsSection />
-        <ResumeSection />
-        <ContactSection />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects/:id" element={<ProjectDetailsPage />} />
+        </Routes>
       </main>
-
       <Footer />
     </div>
   );
