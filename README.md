@@ -1,5 +1,5 @@
 # Personal Portfolio Website
-A UI designed to display personal, bootcamp, and academic projects along with my resume, contact information, and a brief "about me" section. Built using React, Vite, Tailwind CSS and deployed using Netlify.
+A UI designed to display my personal, bootcamp, and academic projects along with my resume, contact information, and a brief "about me" section. Built using React, Vite, Tailwind CSS and deployed using Netlify.
 
 ## Live Demo
 https://powell-lauren.netlify.app/
