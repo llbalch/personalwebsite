@@ -46,6 +46,9 @@ function Hero() {
         <img
           src="/LPEmoji.png"
           alt="Lauren Powell's emoji profile picture"
+          loading="eager"
+          width="320"
+          height="320"
           className={`rounded-full h-40 w-40 object-cover md:h-64 md:w-64 lg:h-80 lg:w-80`}
         />
       </div>
