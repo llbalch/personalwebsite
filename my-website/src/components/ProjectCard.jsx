@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
+import { focusClasses } from "../utils/styles";
 
 function ProjectCard({ project }) {
   const { isDark } = useTheme();
@@ -8,7 +9,7 @@ function ProjectCard({ project }) {
     <article
       className={`flex flex-col gap-2 rounded-xl p-4 text-sm ${isDark ? "bg-slate-950/80" : "bg-violet-400/80"}`}
     >
-      <Link to={`/projects/${project.id}`} className="block">
+      <Link to={`/projects/${project.id}`} className={`block rounded-lg ${focusClasses()}`}>
         <h3 className="text-lg font-semibold">{project.title}</h3>
         <p className="text-slate-100">{project.summary}</p>
       </Link>
@@ -34,7 +35,7 @@ function ProjectCard({ project }) {
             href={project.githubUrl}
             target="_blank"
             rel="noreferrer"
-            className="text-xs font-medium text-violet-400 underline"
+            className={`text-xs font-medium text-violet-400 underline rounded-sm ${focusClasses()}`}
           >
             View Code
           </a>
@@ -44,7 +45,7 @@ function ProjectCard({ project }) {
             href={project.liveUrl}
             target="_blank"
             rel="noreferrer"
-            className="text-xs font-medium text-sky-400 underline"
+            className={`text-xs font-medium text-sky-400 underline rounded-sm ${focusClasses('sky-400')}`}
           >
             Live Demo
           </a>

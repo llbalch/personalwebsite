@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { useTheme } from "../context/ThemeContext";
+import { focusClasses, themeFocusClasses } from "../utils/styles";
 
 function Navbar() {
   const location = useLocation();
@@ -28,16 +29,16 @@ function Navbar() {
     >
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 lg:max-w-7xl lg:px-8">
         <div className="flex items-center gap-4 text-sm md:gap-8 lg:gap-12 md:text-base">
-          <Link to="/#portfolio">Portfolio</Link>
-          <Link to="/#resume">Resume</Link>
-          <Link to="/#about">About</Link>
-          <Link to="/#contact">Contact</Link>
+          <Link to="/#portfolio" className={`rounded-sm ${focusClasses()}`}>Portfolio</Link>
+          <Link to="/#resume" className={`rounded-sm ${focusClasses()}`}>Resume</Link>
+          <Link to="/#about" className={`rounded-sm ${focusClasses()}`}>About</Link>
+          <Link to="/#contact" className={`rounded-sm ${focusClasses()}`}>Contact</Link>
         </div>
 
         <button
           type="button"
           onClick={toggleTheme}
-          className={`rounded-full p-2 text-lg transition-colors ${
+          className={`rounded-full p-2 text-lg transition-colors ${themeFocusClasses(isDark)} ${
             isDark
               ? "bg-violet-500/20 hover:bg-violet-500/30 text-black"
               : "bg-orange-400/30 hover:bg-orange-400/40 text-slate-800"

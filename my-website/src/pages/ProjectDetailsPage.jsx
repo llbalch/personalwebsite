@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../data/projects";
+import { focusClasses } from "../utils/styles";
 
 export default function ProjectDetailsPage() {
   const { id } = useParams();
@@ -11,7 +12,7 @@ export default function ProjectDetailsPage() {
 
   return (
     <div className="container mx-auto max-w-4xl px-4 py-20">
-      <Link to="/#portfolio" className="text-violet-400 hover:underline">
+      <Link to="/#portfolio" className={`text-violet-400 hover:underline rounded-sm ${focusClasses()}`}>
         ← Back to portfolio
       </Link>
 

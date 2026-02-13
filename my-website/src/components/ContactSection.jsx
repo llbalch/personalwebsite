@@ -1,4 +1,5 @@
 import { useTheme } from "../context/ThemeContext";
+import { focusClasses } from "../utils/styles";
 
 function ContactSection() {
   const { isDark } = useTheme();
@@ -14,7 +15,7 @@ function ContactSection() {
       <div className="mt-4 flex flex-wrap gap-4 text-medium">
         <a
           href="mailto:llbalch@gmail.com"
-          className={`underline transition-colors hover:!text-orange-400 ${textColorClass}`}
+          className={`underline transition-colors hover:!text-orange-400 rounded-sm ${focusClasses('orange-400')} ${textColorClass}`}
         >
           Email
         </a>
@@ -22,7 +23,7 @@ function ContactSection() {
           href="https://www.linkedin.com/in/laurenpowell7/"
           target="_blank"
           rel="noreferrer"
-          className={`underline transition-colors hover:!text-orange-400 ${textColorClass}`}
+          className={`underline transition-colors hover:!text-orange-400 rounded-sm ${focusClasses('orange-400')} ${textColorClass}`}
         >
           LinkedIn
         </a>
@@ -30,7 +31,7 @@ function ContactSection() {
           href="https://github.com/llbalch/"
           target="_blank"
           rel="noreferrer"
-          className={`underline transition-colors hover:!text-orange-400 ${textColorClass}`}
+          className={`underline transition-colors hover:!text-orange-400 rounded-sm ${focusClasses('orange-400')} ${textColorClass}`}
         >
           GitHub
         </a>

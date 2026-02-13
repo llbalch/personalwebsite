@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
+import { themeFocusClasses } from "../utils/styles";
 
 function Hero() {
   const { isDark } = useTheme();
@@ -24,16 +25,16 @@ function Hero() {
         <div className={`flex flex-wrap gap-3`}>
           <Link
             to="/#portfolio"
-            className={`rounded-full px-4 py-2 text-sm font-medium ${
-              isDark ? "bg-violet-500/20" : "bg-violet-400/80"
+            className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${themeFocusClasses(isDark)} ${
+              isDark ? "bg-violet-500/20 hover:bg-violet-500/30" : "bg-violet-400/80 hover:bg-violet-500/80"
             }`}
           >
             View Portfolio
           </Link>
           <Link
             to="/#resume"
-            className={`rounded-full px-4 py-2 text-sm font-medium ${
-              isDark ? "bg-violet-500/20" : "bg-violet-400/80"
+            className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${themeFocusClasses(isDark)} ${
+              isDark ? "bg-violet-500/20 hover:bg-violet-500/30" : "bg-violet-400/80 hover:bg-violet-500/80"
             }`}
           >
             View Resume
