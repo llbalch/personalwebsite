@@ -6,8 +6,8 @@ function ContactSection() {
   const textColorClass = isDark ? "!text-slate-300" : "!text-slate-700";
 
   return (
-    <section id="contact" className="mx-auto max-w-5xl px-4 py-16">
-      <h2 className="text-2xl font-semibold text-orange-400">Get in Touch</h2>
+    <section id="contact" className="mx-auto max-w-5xl px-4 py-16" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" className="text-2xl font-semibold text-orange-400">Get in Touch</h2>
       <p className={`mt-4 text-sm ${textColorClass}`}>
         The best way to reach me is via email or LinkedIn.
       </p>

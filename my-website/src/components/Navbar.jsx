@@ -27,7 +27,7 @@ function Navbar() {
         isDark ? "bg-slate-950/80" : "bg-violet-400/80"
       }`}
     >
-      <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 lg:max-w-7xl lg:px-8">
+      <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 lg:max-w-7xl lg:px-8" role="navigation" aria-label="Main navigation">
         <div className="flex items-center gap-4 text-sm md:gap-8 lg:gap-12 md:text-base">
           <Link to="/#portfolio" className={`rounded-sm ${focusClasses()}`}>Portfolio</Link>
           <Link to="/#resume" className={`rounded-sm ${focusClasses()}`}>Resume</Link>

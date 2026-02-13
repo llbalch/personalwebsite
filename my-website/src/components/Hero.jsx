@@ -45,7 +45,7 @@ function Hero() {
       <div className="flex-1 flex justify-center">
         <img
           src="/LPEmoji.png"
-          alt="Profile"
+          alt="Lauren Powell's emoji profile picture"
           className={`rounded-full h-40 w-40 object-cover md:h-64 md:w-64 lg:h-80 lg:w-80`}
         />
       </div>

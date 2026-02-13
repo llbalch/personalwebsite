@@ -8,10 +8,10 @@ function ResumeSection() {
     : "bg-white/80 hover:bg-orange-400/40 !text-slate-950 outline outline-orange-400";
 
   return (
-    <section id="resume" className="mx-auto max-w-5xl px-4 py-16">
+    <section id="resume" className="mx-auto max-w-5xl px-4 py-16" aria-labelledby="resume-heading">
       <div className={`flex flex-col gap-6 rounded-xl p-6 ${backgroundClass}`}>
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <h2 className="text-2xl font-semibold">TL;DR</h2>
+          <h2 id="resume-heading" className="text-2xl font-semibold">TL;DR</h2>
           <a
             href="LAUREN_POWELL_Resume.pdf"
             download

@@ -5,8 +5,8 @@ function AboutSection() {
   const textColorClass = isDark ? "text-slate-300" : "text-slate-700";
 
   return (
-    <section id="about" className="mx-auto max-w-5xl px-4 py-16">
-      <h2 className="text-2xl font-semibold">About Me</h2>
+    <section id="about" className="mx-auto max-w-5xl px-4 py-16" aria-labelledby="about-heading">
+      <h2 id="about-heading" className="text-2xl font-semibold">About Me</h2>
       <p className={`mt-2 text-medium ${textColorClass}`}>
         Technology enthusiast with the ability to quickly evaluate, incorporate
         & apply new information and concepts. I am a team player & have a sunny
