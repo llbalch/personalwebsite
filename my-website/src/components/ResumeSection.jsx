@@ -1,12 +1,12 @@
-import { useTheme } from '../context/ThemeContext';
+import { useTheme } from "../context/ThemeContext";
 
 function ResumeSection() {
   const { isDark } = useTheme();
   const textColorClass = isDark ? "!text-slate-300" : "!text-slate-700";
   const backgroundClass = isDark ? "bg-slate-500/40" : "bg-orange-300/40";
-  const buttonClass = isDark 
-    ? 'bg-violet-500/20 hover:bg-violet-500/30 !text-slate-300 outline outline-violet-400' 
-    : 'bg-white/80 hover:bg-orange-400/40 !text-slate-950 outline outline-orange-400';
+  const buttonClass = isDark
+    ? "bg-violet-500/20 hover:bg-violet-500/30 !text-slate-300 outline outline-violet-400"
+    : "bg-white/80 hover:bg-orange-400/40 !text-slate-950 outline outline-orange-400";
 
   return (
     <section id="resume" className="mx-auto max-w-5xl px-4 py-16">
@@ -49,8 +49,6 @@ function ResumeSection() {
               <li>BS in Software Development</li>
             </ul>
           </div>
-
-        
         </div>
       </div>
     </section>

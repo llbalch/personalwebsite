@@ -3,7 +3,7 @@ import { useTheme } from "../context/ThemeContext";
 
 function Hero() {
   const { isDark } = useTheme();
-    const textColorClass = isDark ? "text-slate-300" : "text-slate-700";
+  const textColorClass = isDark ? "text-slate-300" : "text-slate-700";
 
   return (
     <section
@@ -21,22 +21,20 @@ function Hero() {
           THRIVE Software Engineer Apprentice @ Verizon
         </p>
 
-        <div
-          className={`flex flex-wrap gap-3`}
-        >
+        <div className={`flex flex-wrap gap-3`}>
           <Link
             to="/#portfolio"
             className={`rounded-full px-4 py-2 text-sm font-medium ${
-            isDark ? "bg-violet-500/20" : "bg-violet-400/80"
-          }`}
+              isDark ? "bg-violet-500/20" : "bg-violet-400/80"
+            }`}
           >
             View Portfolio
           </Link>
           <Link
             to="/#resume"
             className={`rounded-full px-4 py-2 text-sm font-medium ${
-            isDark ? "bg-violet-500/20" : "bg-violet-400/80"
-          }`}
+              isDark ? "bg-violet-500/20" : "bg-violet-400/80"
+            }`}
           >
             View Resume
           </Link>

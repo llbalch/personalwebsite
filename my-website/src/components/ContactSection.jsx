@@ -1,6 +1,5 @@
 import { useTheme } from "../context/ThemeContext";
 
-
 function ContactSection() {
   const { isDark } = useTheme();
   const textColorClass = isDark ? "!text-slate-300" : "!text-slate-700";
@@ -13,7 +12,10 @@ function ContactSection() {
       </p>
 
       <div className="mt-4 flex flex-wrap gap-4 text-medium">
-        <a href="mailto:llbalch@gmail.com" className={`underline transition-colors hover:!text-orange-400 ${textColorClass}`}>
+        <a
+          href="mailto:llbalch@gmail.com"
+          className={`underline transition-colors hover:!text-orange-400 ${textColorClass}`}
+        >
           Email
         </a>
         <a

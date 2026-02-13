@@ -12,7 +12,8 @@ export const projects = [
   {
     id: "smart-shopping-app",
     title: "SmartCart App",
-    summary: "A smart shopping list that helps you manage your grocery list with ease.",
+    summary:
+      "A smart shopping list that helps you manage your grocery list with ease.",
     tech: ["React", "JavaScript", "Bootstrap", "Vite", "CI/CD"],
     githubUrl: "https://github.com/llbalch/smart-shopping-app",
     liveUrl: "https://smart-shopping-app.onrender.com/",
@@ -22,7 +23,7 @@ export const projects = [
     id: "my-website",
     title: "Personal Website",
     summary: "RESTful API and React UI for managing pet adoptions.",
-    tech: ["React","JavaScript", "Tailwind", "Spring Security"],
+    tech: ["React", "JavaScript", "Tailwind", "Spring Security"],
     githubUrl: "https://github.com/llbalch/personalwebsite",
     liveUrl: "https://ephemeral-tartufo-a2abd8.netlify.app/",
     type: "project",
