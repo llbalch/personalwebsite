@@ -12,8 +12,8 @@ function AboutSection() {
         & apply new information and concepts. I am a team player & have a sunny
         disposition. I am always willing to take on new challenges to build new
         skills & I have a passion for building helpful, user‑centered software.
-        Currently completing a software engineering apprenticeship focused on
-        React & and modern DevOps practices.
+        Currently completing a 1 year SWE apprenticeship with Verizon focused on
+        React & modern DevOps practices.
       </p>
 
       <p className="mt-2 text-2xl uppercase tracking-wide text-orange-400">

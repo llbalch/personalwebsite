@@ -12,12 +12,12 @@ export default function ProjectDetailsPage() {
 
   return (
     <div className="container mx-auto max-w-4xl px-4 py-20">
-      <Link to="/#portfolio" className={`text-violet-400 hover:underline rounded-sm ${focusClasses()}`}>
+      <Link to="/#portfolio" className={` ${focusClasses()}`}>
         ← Back to portfolio
       </Link>
 
       <h1 className="mt-6 text-4xl font-bold">{project.title}</h1>
-      <p className="mt-4 text-lg text-slate-300">{project.summary}</p>
+      <p className="mt-4 text-lg text-orange-400">{project.summary}</p>
 
       <div className="mt-6 flex flex-wrap gap-2">
         {project.tech.map((t) => (
