@@ -24,7 +24,7 @@ function ResumeSection() {
         <div className="grid gap-6 md:grid-cols-3 text-sm">
           <div>
             <h3 className="font-semibold">Top Skills</h3>
-            <ul className={`mt-2 space-y-1 ${textColorClass}`}>
+            <ul className={`mt-2 space-y-2 ${textColorClass}`}>
               <li>Optimizing UX Functionality</li>
               <li>Version Control with Git</li>
               <li>Cross-Functional Team Collaboration</li>
@@ -34,18 +34,25 @@ function ResumeSection() {
           </div>
 
           <div>
-            <h3 className="font-semibold">Languages</h3>
-            <p className={`mt-2 space-y-1 ${textColorClass}`}>
+            <h3 className="font-semibold space-y-2">Languages</h3>
+            <p className={`mt-2 space-y-2 ${textColorClass}`}>
               JavaScript, Java, SQL, HTML, CSS, Python
+            </p>
+            <br></br>
+            <h3 className="font-semibold">Frameworks & Libraries</h3>
+            <p className={`mt-2 space-y-2 ${textColorClass}`}>
+              React, Node.js, Express, Tailwind CSS, Spring Boot
             </p>
           </div>
 
           <div>
             <h3 className="font-semibold">Experience & Education</h3>
-            <ul className={`mt-2 space-y-1 ${textColorClass}`}>
-              <li>Verizon Software Engineering Apprenticeship</li>
-              <li>Multiverse Full Stack Certification</li>
+            <ul className={`mt-2 space-y-2 ${textColorClass}`}>
               <li>BS in Software Development</li>
+              <li>Software Engineering Apprenticeship - Verizon</li>
+              <li>Multiverse Full Stack Certification</li>
+              <li>AS in Information Technology & Networking</li>
+
             </ul>
           </div>
         </div>
