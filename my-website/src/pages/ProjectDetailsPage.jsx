@@ -19,6 +19,17 @@ export default function ProjectDetailsPage() {
       <h1 className="mt-6 text-4xl font-bold">{project.title}</h1>
       <p className="mt-4 text-lg text-orange-400">{project.summary}</p>
 
+      {project.screenshot && (
+        <div className="mt-6 flex justify-center">
+          <img
+            src={project.screenshot}
+            alt={`${project.title} screenshot`}
+            className={`h-auto w-full rounded-xl border border-slate-700/50 object-cover ${project.screenshotClassName ?? "max-w-4xl"}`}
+            loading="lazy"
+          />
+        </div>
+      )}
+
       <div className="mt-6 flex flex-wrap gap-2">
         {project.tech.map((t) => (
           <span
@@ -30,7 +41,37 @@ export default function ProjectDetailsPage() {
         ))}
       </div>
 
-      <div className="mt-6 flex gap-4">
+      <section className="mt-8" aria-labelledby="project-overview-heading">
+        <h2 id="project-overview-heading" className="text-xl font-semibold">
+          Overview
+        </h2>
+        {project.overview?.length ? (
+          <ul className="mt-4 list-disc space-y-2 pl-6 text-slate-300">
+            {project.overview.map((overview) => (
+              <li key={overview}>{overview}</li>
+            ))}
+          </ul>
+        ) : (
+          <p className="mt-4 text-slate-400">More details coming soon.</p>
+        )}
+      </section>
+
+      <section className="mt-8" aria-labelledby="project-reflections-heading">
+        <h2 id="project-reflections-heading" className="text-xl font-semibold">
+          Reflections
+        </h2>
+        {project.reflections?.length ? (
+          <ul className="mt-4 list-disc space-y-2 pl-6 text-slate-300">
+            {project.reflections.map((reflection) => (
+              <li key={reflection}>{reflection}</li>
+            ))}
+          </ul>
+        ) : (
+          <p className="mt-4 text-slate-400">Reflections coming soon.</p>
+        )}
+      </section>
+
+      <div className="mt-6 flex gap-16">
         {project.githubUrl && (
           <a
             href={project.githubUrl}
