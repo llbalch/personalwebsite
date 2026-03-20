@@ -6,6 +6,7 @@ https://powell-lauren.netlify.app/
 
 ## Features
 + Responsive Navigation
++ Theme Persistence - Light/Dark Mode
 + Section Landing
 + Projects Showcase
 + Downloadable PDF Resume
