@@ -41,7 +41,10 @@ export default function ProjectDetailsPage() {
         ))}
       </div>
 
-      <section className="mt-8" aria-labelledby="project-overview-heading">
+      <section
+        className="mt-8 rounded-xl bg-violet-400/80 p-4"
+        aria-labelledby="project-overview-heading"
+      >
         <h2 id="project-overview-heading" className="text-xl font-semibold">
           Overview
         </h2>
@@ -56,7 +59,10 @@ export default function ProjectDetailsPage() {
         )}
       </section>
 
-      <section className="mt-8" aria-labelledby="project-reflections-heading">
+      <section
+        className="mt-8 rounded-xl bg-violet-400/80 p-4"
+        aria-labelledby="project-reflections-heading"
+      >
         <h2 id="project-reflections-heading" className="text-xl font-semibold">
           Reflections
         </h2>
